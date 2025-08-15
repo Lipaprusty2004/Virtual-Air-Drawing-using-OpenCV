@@ -4,6 +4,8 @@ This project demonstrates gesture-controlled air drawing using OpenCV and MediaP
 By tracking hand landmarks via webcam, you can draw in the air using your thumb + index finger pinch gesture, select colors, clear the canvas, and even save your artwork.
 
 🚀 Project Levels
+
+
 🖌️ 1. Basic Drawing
 
 Webcam opens.
