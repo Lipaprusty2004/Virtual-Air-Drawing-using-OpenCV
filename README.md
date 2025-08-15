@@ -1,49 +1,85 @@
-🎨 Virtual Air Drawing using OpenCV
+🎨 Virtual Air Drawing using OpenCV & MediaPipe
 
-Virtual Air Drawing using OpenCV is a fun and interactive computer vision project that turns your hand into a virtual pen. Using just a webcam, the system detects your hand, tracks your index finger in real-time, and allows you to draw freely in the air. No physical pen or paper required — your movements are captured and displayed on a virtual canvas.
+This project demonstrates gesture-controlled air drawing using OpenCV and MediaPipe.
+By tracking hand landmarks via webcam, you can draw in the air using your thumb + index finger pinch gesture, select colors, clear the canvas, and even save your artwork.
 
-This project showcases the power of OpenCV for image processing and MediaPipe for accurate hand landmark detection. It’s a great example of how gesture recognition can be applied to creative applications such as virtual whiteboards, drawing tools, or even gesture-based games.
+🚀 Project Levels
+🖌️ 1. Basic Drawing
 
-🔹 Features
+Webcam opens.
 
-✍️ Air Drawing – Draw anything in the air using just your fingertip
+Draw freely in the air using pinch gesture (thumb + index).
 
-🎥 Real-Time Tracking – Smooth and fast hand tracking using a webcam
+Only one default color is available.
 
-🖼️ Virtual Canvas – Your screen becomes a digital canvas
+🎨 2. Multi-Color Drawing
 
-🧹 Clear Canvas Option – Reset the screen whenever you need a fresh start
+Webcam opens.
 
-💡 Hands-Free Creativity – No external hardware needed, just your hand
+Draw with multiple colors.
 
-🛠 Tech Stack
+Change colors by pointing your index finger to the palette at the top of the screen.
+
+🧹 3. Advanced Drawing (Final Version)
+
+Webcam opens.
+
+Draw with multiple colors.
+
+Color selection via index finger.
+
+🧹 Clear Button to reset canvas.
+
+🖼 Save Image Button to export your drawing as drawing.png.
+
+🛠️ Tech Stack
 
 Python
 
-OpenCV → For image processing & drawing on frames
+OpenCV
 
-MediaPipe → For hand & fingertip landmark detection
+MediaPipe
 
-NumPy → For handling coordinates and arrays
+NumPy
 
-🚀 How It Works
+Streamlit (for interactive UI in final version)
 
-Captures live video stream from the webcam.
+📂 Project Structure
+📁 Virtual-Air-Drawing
+ ┣ 📄 basic_drawing.py      # 1st code (single color)
+ ┣ 📄 multicolor_drawing.py # 2nd code (color selection)
+ ┣ 📄 final_app.py          # 3rd code (color, clear, save)
+ ┣ 📄 README.md             # Documentation
 
-Detects hand and finger landmarks using MediaPipe Hand Tracking.
+▶️ How to Run
+1️⃣ Install dependencies
+pip install opencv-python mediapipe numpy streamlit
 
-Tracks the index fingertip position to determine the drawing point.
+2️⃣ Run Basic Version
+python basic_drawing.py
 
-Continuously plots the tracked positions onto a virtual canvas.
+3️⃣ Run Multi-Color Version
+python multicolor_drawing.py
 
-The result is displayed in real-time, allowing you to draw letters, shapes, or anything you want.
+4️⃣ Run Final Streamlit App
+streamlit run final_app.py
 
-🌟 Future Improvements
+✋ Controls
 
-Add multiple color options for drawing 🎨
+Draw → Pinch gesture (Thumb + Index finger close).
 
-Support eraser tool to remove parts of the drawing
+Change Color → Point index finger to color palette.
 
-Add shortcuts (e.g., click C for clear screen, click Esc for exist )
+🧹 Clear Canvas → Click Clear button.
 
-Save the virtual drawing as an image file 🖼️
+🖼 Save Image → Click Save button → Download drawing.
+
+🎯 Future Improvements
+
+✨ Brush size control (slider).
+
+🧽 Eraser tool.
+
+🖌️ Different brush styles.
+
+💾 Save multiple drawings with custom filenames.
