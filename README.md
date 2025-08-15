@@ -47,10 +47,15 @@ NumPy
 Streamlit (for interactive UI in final version)
 
 📂 Project Structure
+
 📁 Virtual-Air-Drawing
+
  ┣ 📄 basic_drawing.py      # 1st code (single color)
+ 
  ┣ 📄 multicolor_drawing.py # 2nd code (color selection)
+ 
  ┣ 📄 final_app.py          # 3rd code (color, clear, save)
+ 
  ┣ 📄 README.md             # Documentation
 
 ▶️ How to Run
