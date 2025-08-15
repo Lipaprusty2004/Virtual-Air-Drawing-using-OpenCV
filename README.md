@@ -44,6 +44,6 @@ Add multiple color options for drawing 🎨
 
 Support eraser tool to remove parts of the drawing
 
-Add gesture shortcuts (e.g., ✌️ for clear screen, ✊ for pause)
+Add shortcuts (e.g., click C for clear screen, click Esc for exist )
 
 Save the virtual drawing as an image file 🖼️
